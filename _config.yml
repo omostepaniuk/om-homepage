@@ -19,3 +19,9 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+gems: ['jekyll-paginate', 'jekyll-multiple-languages']
+
+languages: ['en', 'ru']
+
+language_default: 'en'
