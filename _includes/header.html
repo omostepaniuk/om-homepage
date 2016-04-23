@@ -19,7 +19,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <div class="navbar-right">
           <ul class="nav navbar-nav ">
-            {% for nav_item in site.nav.main %}
+            {% for nav_item in site.data.navigation.nav.main %}
               <li><a href="{{ nav_item[1] }}">{{ nav_item[0] }}</a></li>
             {% endfor %}
           </ul>

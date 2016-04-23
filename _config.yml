@@ -15,23 +15,8 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/"
 url: "http://mostepaniuk.com"
 
-nav:
-  main:
-    blog: "blog"
-
 twitter_username: amost
 github_username:  omostepaniuk
-
-# URLs
-contact_urls:
-  twitter:
-    url: "https://twitter.com/amost"
-    label: "Twitter"
-    icon: "twitter-square"
-  facebook:
-    url: "https://facebook.com/mostepaniuk"
-    label: "Facebook"
-    icon: "facebook-square"
 
 # Build settings
 markdown: kramdown
