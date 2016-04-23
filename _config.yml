@@ -24,6 +24,8 @@ languages: ['en', 'ru']
 
 language_default: 'en'
 
+excerpt_separator: "<!--more-->"
+
 # pagination settings
 
 paginate: 5
