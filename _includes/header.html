@@ -20,7 +20,8 @@
         <div class="navbar-right">
           <ul class="nav navbar-nav ">
             {% for nav_item in site.data.navigation.nav.main %}
-              <li><a href="{{ nav_item[1] }}">{{ nav_item[0] }}</a></li>
+              {% assign navigation_item_key = nav_item[0] %}
+              <li><a href="{{ nav_item[1] }}">{{ site.data.i18n[page.language].navigation[navigation_item_key] }}</a></li>
             {% endfor %}
           </ul>
           <ul class="nav navbar-nav lang-selector">
