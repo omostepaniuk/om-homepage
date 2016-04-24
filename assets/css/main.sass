@@ -1,6 +1,8 @@
 ---
 ---
 
+@import _colors.sass
+
 body
   font-family: Merriweather, serif
   padding-bottom: 60px
@@ -148,17 +150,24 @@ aside.post-date > div.post-date-month, div.post-date-year
   font-size: 22px
   height: 20px
 
-h2.post-item-title
+.post-item-title
   margin-top: 0
+  color: $yellow
 
-h2.post-item-title, h2.post-item-title > a
-  font-weight: 700
-  font-size: 32px
-  color: #3a4145
-  text-decoration: none
+  & > a
+    font-weight: 700
+    font-size: 32px
+    color: $grey
+    text-decoration: none
 
-h2.post-item-title > a:hover
-  color: #0071d1
+  & > a:hover
+    transition-property: all
+    transition-duration: 0.2s
+    -moz-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82)
+    -webkit-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82)
+    -ms-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82)
+    transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82)
+    color: $yellow
 
 aside.pre-post-item-meta
   height: 20px
