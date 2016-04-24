@@ -4,7 +4,7 @@ title:  "Часть нулевая: Цепочка случайностей"
 date:   2015-09-16 00:57 +0200
 tags: Traveling,Adventures,USA,New York
 author: Oleksandr Mostepaniuk
-categories: Traveling
+categories: blog
 language: ru
 ---
 
