@@ -2,6 +2,12 @@
 ---
 
 @import _colors.sass
+@import _utils.sass
+
+html, body
+  font-size: 100%
+
+// old styling (for refactoring): start
 
 body
   font-family: Merriweather, serif
@@ -122,8 +128,33 @@ footer a
 footer a > i.fa
   width: 20px
 
+// old styling (for refactoring): end
+
 /* Blog Posts */
 
+.page-header
+  text-align: center
+  border-bottom: none
+
+.page-title
+  font-size: 2.25rem
+  font-weight: 700
+
+  &:before
+    position: absolute
+    top: calc(100% - 1px)
+    left: 50%
+    width: 2rem
+    height: 1px
+    content: ""
+    background: #333
+
+.page-suptitle
+  color: rgba(0, 0, 0, 0.48)
+  font-size: 1rem
+  text-transform: uppercase
+
+// old styling (for refactoring): start
 article.post-item
   font-family: "Open Sans", sans-serif
   border-bottom: 1px solid #EEE
@@ -202,3 +233,5 @@ div.post-item-actions
 div.post-item-actions a
   color: #AAA
   font-size: 16px
+
+// // old styling (for refactoring): end
