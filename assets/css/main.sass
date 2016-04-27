@@ -135,8 +135,11 @@ footer a > i.fa
 .page-header
   text-align: center
   border-bottom: none
+  color: $dark-grey
 
 .page-title
+  position: relative
+  padding-bottom: 1rem
   font-size: 2.25rem
   font-weight: 700
 
@@ -147,12 +150,34 @@ footer a > i.fa
     width: 2rem
     height: 1px
     content: ""
-    background: #333
+    background: $dark-grey
+    -moz-transform: translate(-50%)
+    -ms-transform: translate(-50%)
+    -webkit-transform: translate(-50%)
+    transform: translate(-50%)
 
 .page-suptitle
-  color: rgba(0, 0, 0, 0.48)
+  color: $light-gray
   font-size: 1rem
   text-transform: uppercase
+
+  & a
+    color: rgba(0, 0, 0, 0.8)
+
+    &:hover
+      text-decoration: none
+      color: $light-gray
+
+.page-introduction
+  font-size: 1.5rem
+  color: $dark-grey
+  font-weight: 300
+
+  // font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+  // font-style: normal
+  // outline-color: $dark-grey
+  // outline-style: none
+  // outline-width: 0px
 
 // old styling (for refactoring): start
 article.post-item
