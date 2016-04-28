@@ -3,6 +3,7 @@
 
 @import _colors.sass
 @import _utils.sass
+@import _mixins.sass
 
 html, body
   font-size: 100%
@@ -19,9 +20,10 @@ body
   margin-bottom: 0
   min-height: 40px
 
-.navbar-nav > li > a
-  padding-top: 10px
-  padding-bottom: 10px
+.navbar-item
+  & > a
+    padding-top: 10px
+    padding-bottom: 10px
 
 .navbar-brand
   height: 40px
@@ -38,7 +40,7 @@ body
 
 .navbar-default
   background-color: #FFF
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125)
+  border-bottom: 1px solid rgba(black, 0.125)
 
 ul.nav.navbar-nav li a
   font-family: 'Open Sans', arial, helvetica, tahoma, sans-serif
@@ -143,18 +145,11 @@ footer a > i.fa
   font-size: 2.25rem
   font-weight: 700
 
-  &:before
-    position: absolute
-    top: calc(100% - 1px)
+  @include underline($color: $dark-grey, $width: 2rem)
+
+  &::before
     left: 50%
-    width: 2rem
-    height: 1px
-    content: ""
-    background: $dark-grey
-    -moz-transform: translate(-50%)
-    -ms-transform: translate(-50%)
-    -webkit-transform: translate(-50%)
-    transform: translate(-50%)
+    @include translate(-50%)
 
 .page-suptitle
   color: $light-gray

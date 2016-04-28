@@ -1,0 +1,15 @@
+@mixin underline($color, $width: 100%)
+  &::before
+    content: ""
+    position: absolute
+    top: calc(100% - 1px)
+    left: 0
+    width: $width
+    height: 1px
+    background: $color
+
+@mixin translate($value)
+  -moz-transform: translate($value)
+  -ms-transform: translate($value)
+  -webkit-transform: translate($value)
+  transform: translate($value)
