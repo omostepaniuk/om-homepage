@@ -22,7 +22,7 @@
             {% for nav_item in site.data.navigation.nav.main %}
               {% assign navigation_item_key = nav_item[0] %}
               <li class="navbar-item">
-                <a href="{{ nav_item[1] }}">
+                <a href="{% if page.language != 'en' %}/{{page.language}}{% endif %}{{ nav_item[1] }}">
                   <span>{{ site.data.i18n[page.language].navigation[navigation_item_key] }}</span>
                 </a>
               </li>
