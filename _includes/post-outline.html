@@ -22,8 +22,8 @@
         </span>
       </aside> -->
       <div class="post-item-body">
-        {{ include.post.excerpt }}
-        <a href="{{ include.post.url }}">Read More...</a>
+        {{ include.post.excerpt | remove: '<p>' | remove: '</p>' }}
+        <a href="{{ include.post.url }}" class="read-more">»</a>
       </div>
       <div class="post-item-actions">
         {% include share.html url=include.post.url title=include.post.title %}
