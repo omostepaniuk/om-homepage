@@ -98,7 +98,7 @@ figure#logo a
 
 div#about-me p
   font-family: Merriweather, sans-serif
-  color: #2e2e2e
+  color: $post-body-text-color
   font-size: 16px
 
 div#contacts a
@@ -179,6 +179,17 @@ footer a > i.fa
   color: $dark-grey
   font-weight: 300
 
+a.regular-link
+  color: black
+  border-bottom: 1px solid $yellow
+  text-decoration: none
+  @include transition(0.3s, ease)
+
+  &:hover
+    text-decoration: none
+    border-bottom: none
+    background-color: $yellow
+
   // font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif
   // font-style: normal
   // outline-color: $dark-grey
@@ -253,7 +264,7 @@ aside.post-item-meta
 div.post-item-body
   font-family: Merriweather, sans-serif
   font-size: 16px
-  color: #2E2E2E
+  color: $post-body-text-color
   line-height: 28px
   text-align: justify
 
