@@ -126,24 +126,16 @@ div#contacts a
     float: right
 
   & a
-    color: #AAA
-    font-size: 16px
+    color: $light-gray
+    font-size: 1rem
+
+    &:hover
+      color: $yellow
 
     & > i.fa
       width: 20px
 
 /* Blog Posts */
-
-.post-item-suptitle
-  font-size: 0.875rem
-  color: $light-gray
-  text-transform: uppercase
-
-  & a
-    color: $yellow
-
-    &:hover
-      text-decoration: none
 
 .page-header
   text-align: center
@@ -193,12 +185,6 @@ a.regular-link
 a.read-more
   color: $yellow
 
-  // font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif
-  // font-style: normal
-  // outline-color: $dark-grey
-  // outline-style: none
-  // outline-width: 0px
-
 // old styling (for refactoring): start
 article.post-item
   font-family: "Open Sans", sans-serif
@@ -212,7 +198,6 @@ article.post-item:last-child
 aside.post-date
   padding-top: 65px
   font-weight: 700
-  /*color: #3A4145*/
   color: #4c5859
 
 aside.post-date > div
@@ -225,25 +210,6 @@ aside.post-date > div.post-date-day
 aside.post-date > div.post-date-month, div.post-date-year
   font-size: 22px
   height: 20px
-
-.post-item-title
-  margin-top: 0
-  font-weight: bold
-
-  & > a
-    font-weight: 700
-    font-size: 32px
-    color: $grey
-    text-decoration: none
-
-  & > a:hover
-    transition-property: all
-    transition-duration: 0.2s
-    -moz-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82)
-    -webkit-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82)
-    -ms-transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82)
-    transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82)
-    color: $yellow
 
 aside.pre-post-item-meta
   height: 20px
@@ -261,22 +227,47 @@ aside.post-item-meta
   padding-bottom: 10px
   margin-bottom: 10px
   font-size: 13px
-/*  border-bottom: 1px solid #DDD
-  border-top: 1px solid #DDD*/
 
-div.post-item-body
+// old styling (for refactoring): end
+
+.post-item-title
+  margin-top: 0
+  font-weight: bold
+
+  & > a
+    font-weight: bold
+    font-size: 2rem
+    color: $grey
+    text-decoration: none
+
+  & > a:hover
+    @include transition(0.2s, cubic-bezier(0.165, 0.63, 0.14, 0.82))
+    color: $yellow
+
+.post-item-suptitle
+  font-size: 0.875rem
+  color: $light-gray
+  text-transform: uppercase
+
+  & a
+    color: $yellow
+
+    &:hover
+      text-decoration: none
+
+.post-item-body
   font-family: Merriweather, sans-serif
-  font-size: 16px
+  font-size: 1rem
   color: $post-body-text-color
   line-height: 28px
   text-align: justify
 
-div.post-item-actions
-  margin-top: 15px
+.post-item-actions
+  margin-top: 1rem
 
-/* FIXME: maybe use aside as a container? */
-div.post-item-actions a
-  color: #AAA
-  font-size: 16px
+  & a
+    color: $light-gray
+    font-size: 1rem
 
-// // old styling (for refactoring): end
+    &:hover
+      color: $yellow
