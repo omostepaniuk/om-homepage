@@ -15,6 +15,7 @@ body
   padding-bottom: 60px
 
 /* Bootstrap Overrides */
+
 .navbar
   border-radius: 0
   margin-bottom: 0
@@ -29,36 +30,46 @@ body
   height: 40px
   line-height: 10px
 
-.navbar-default .navbar-brand
-  color: #000
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
-  font-size: 15px
-
-.navbar-default .navbar-brand > span:first-child
-  font-size: 16px
-  font-weight: 700
-
-.navbar-default
+.site-header
   background-color: #FFF
+  border: none
   border-bottom: 1px solid rgba(black, 0.125)
 
-ul.nav.navbar-nav li a
-  font-family: 'Open Sans', arial, helvetica, tahoma, sans-serif
-  font-weight: 600
-  font-size: 13px
-  text-transform: uppercase
-  color: #000
+  & .navbar-toggle
+    border-color: $light-grey
+
+    & .icon-bar
+      background-color: $light-grey
+
+  & .navbar-brand
+    color: #000
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-size: 1rem
+    border-color: $grey
+
+    & > span:first-child
+      font-size: 1rem
+      font-weight: 700
+
+ul.navbar-nav
+  & > li a
+    font-family: 'Open Sans', arial, helvetica, tahoma, sans-serif
+    font-weight: 600
+    font-size: 0.825rem
+    text-transform: uppercase
+    color: black
+
+  &.lang-selector li a
+    padding-left: 5px
+    padding-right: 5px
+    font-weight: 400
+
+    &.active
+      color: $green
 
 ul.lang-selector
   margin-left: 15px
 
-ul.nav.navbar-nav.lang-selector li a
-  padding-left: 5px
-  padding-right: 5px
-  font-weight: 400
-
-ul.nav.navbar-nav.lang-selector li a.active
-  color: green
 
 /* Index page */
 
@@ -126,7 +137,7 @@ div#contacts a
     float: right
 
   & a
-    color: $light-gray
+    color: $light-grey
     font-size: 1rem
 
     &:hover
@@ -155,7 +166,7 @@ div#contacts a
     @include translate(-50%)
 
 .page-suptitle
-  color: $light-gray
+  color: $light-grey
   font-size: 1rem
   text-transform: uppercase
 
@@ -164,7 +175,7 @@ div#contacts a
 
     &:hover
       text-decoration: none
-      color: $light-gray
+      color: $light-grey
 
 .page-introduction
   font-size: 1.5rem
@@ -246,7 +257,7 @@ aside.post-item-meta
 
 .post-item-suptitle
   font-size: 0.875rem
-  color: $light-gray
+  color: $light-grey
   text-transform: uppercase
 
   & a
@@ -266,7 +277,7 @@ aside.post-item-meta
   margin-top: 1rem
 
   & a
-    color: $light-gray
+    color: $light-grey
     font-size: 1rem
 
     &:hover
