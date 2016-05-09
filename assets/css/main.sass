@@ -5,6 +5,11 @@
 @import _utils.sass
 @import _mixins.sass
 
+// sticky footer
+html
+  position: relative
+  min-height: 100%
+
 html, body
   font-size: 100%
 
@@ -12,7 +17,7 @@ html, body
 
 body
   font-family: Merriweather, serif
-  padding-bottom: 60px
+  margin-bottom: 60px
 
 // old styling (for refactoring): end
 
@@ -115,6 +120,10 @@ div#contacts a
 /* Page footer */
 
 .page-footer
+  position: absolute
+  bottom: 0
+  width: 100%
+  height: 43px
   border-top: 1px solid $default-border-color
   padding-top: 10px
   padding-bottom: 10px
