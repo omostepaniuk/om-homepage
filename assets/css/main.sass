@@ -14,26 +14,19 @@ body
   font-family: Merriweather, serif
   padding-bottom: 60px
 
+// old styling (for refactoring): end
+
 /* Bootstrap Overrides */
 
 .navbar
   border-radius: 0
   margin-bottom: 0
-  min-height: 40px
-
-.navbar-item
-  & > a
-    padding-top: 10px
-    padding-bottom: 10px
-
-.navbar-brand
-  height: 40px
 
 // replacement for bootstrap's .navbar-default
-.navbar-site    
+.navbar-site
   background-color: #FFF
   border: none
-  border-bottom: 1px solid rgba(black, 0.125)
+  border-bottom: 1px solid $default-border-color
 
   & .navbar-toggle
     border-color: $light-grey
@@ -46,12 +39,13 @@ body
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
     font-size: 1rem
     border-color: $grey
+    height: 100%
 
     & > span:first-child
       font-size: 1rem
       font-weight: 700
 
-ul.navbar-nav
+.navbar-nav
   & > li a
     font-family: 'Open Sans', arial, helvetica, tahoma, sans-serif
     font-weight: 600
@@ -67,9 +61,8 @@ ul.navbar-nav
     &.active
       color: $green
 
-ul.lang-selector
+.lang-selector
   margin-left: 15px
-
 
 /* Index page */
 
@@ -122,11 +115,12 @@ div#contacts a
 /* Page footer */
 
 .page-footer
-  border-top: 1px solid #CACACA
+  border-top: 1px solid $default-border-color
   padding-top: 10px
   padding-bottom: 10px
-  color: #AAA
+  color: $light-grey
   background-color: #FFF
+  font-size: 0.875rem
 
   & .ft-left
     padding-left: 10px
