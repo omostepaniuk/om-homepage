@@ -28,9 +28,9 @@ body
 
 .navbar-brand
   height: 40px
-  line-height: 10px
 
-.site-header
+// replacement for bootstrap's .navbar-default
+.navbar-site    
   background-color: #FFF
   border: none
   border-bottom: 1px solid rgba(black, 0.125)
@@ -38,8 +38,8 @@ body
   & .navbar-toggle
     border-color: $light-grey
 
-    & .icon-bar
-      background-color: $light-grey
+  & .icon-bar
+    background-color: $light-grey
 
   & .navbar-brand
     color: #000
