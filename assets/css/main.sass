@@ -74,48 +74,52 @@ body
 main
   font-family: "Open Sans", sans-serif
 
-div#header-stripe
-  padding: 32px
-
-div#header-stripe h1
-  margin-bottom: 8px
-  text-align: center
-  color: #3a4145
-  font-weight: bold
-
-div#header-stripe h2
-  margin-top: 0
-  text-align: center
-  color: #AAA
-  font-family: Merriweather, serif
-  font-weight: normal
-
 figure#logo
   width: 110px
   height: 110px
-  border: 5px solid #F3A500
+  border: 5px solid $yellow
   border-radius: 100%
   margin: 0 auto
 
-figure#logo a
-  display: block
-  width: 90px
-  height: 90px
-  background-color: #F3A500
-  margin: 5px auto
-  border-radius: 100%
+  & a
+    display: block
+    width: 90px
+    height: 90px
+    background-color: $yellow
+    margin: 5px auto
+    border-radius: 100%
 
-div#about-me p
-  font-family: Merriweather, sans-serif
-  color: $post-body-text-color
-  font-size: 16px
+.header-stripe
+  padding: 2rem
 
-div#contacts a
-  color: #111
-  display: block
-  height: 30px
+  & h1
+    margin-bottom: 8px
+    text-align: center
+    color: $grey
+    font-weight: bold
 
-// old styling (for refactoring): end
+  & h2
+    margin-top: 0
+    text-align: center
+    color: $light-grey
+    font-family: Merriweather, serif
+    font-weight: normal
+
+.about-me
+  color: $dark-grey
+
+  & p
+    font-family: Merriweather, sans-serif
+    font-size: 1rem
+    color: $post-body-text-color
+
+.contacts
+  color: $dark-grey
+
+  & a
+    color: $dark-grey
+    display: block
+    height: 30px
 
 /* Page footer */
 
