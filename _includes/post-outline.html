@@ -10,17 +10,6 @@
       <h2 class="post-item-title">
         <a href="{{ include.post.url }}">{{ include.post.title }}</a>
       </h2>
-      <!-- <aside class="post-item-meta">
-        <span><i class="fa fa-calendar">&nbsp;{{ include.post.date | date: "%-d %b, %Y" }}</i></span>
-        <span><i class="fa fa-user"></i>&nbsp;by {{ include.post.author }}</span>
-        <span>
-          <i class="fa fa-tags">&nbsp;
-            {% for tag in include.post.tags %}
-            {{ tag }}
-            {% endfor %}
-          </i>
-        </span>
-      </aside> -->
       <div class="post-item-body">
         {{ include.post.excerpt | remove: '<p>' | remove: '</p>' }}
         <a href="{{ include.post.url }}" class="read-more">»</a>

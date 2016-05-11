@@ -21,6 +21,13 @@ body
 
 // old styling (for refactoring): end
 
+// common styling
+
+.icon-link
+  &:hover
+    color: $yellow
+    text-decoration: none
+
 /* Bootstrap Overrides */
 
 .navbar
@@ -146,9 +153,6 @@ figure#logo
   & a
     color: $light-grey
     font-size: 1rem
-
-    &:hover
-      color: $yellow
 
     & > i.fa
       width: 20px
@@ -286,6 +290,3 @@ aside.post-item-meta
   & a
     color: $light-grey
     font-size: 1rem
-
-    &:hover
-      color: $yellow
