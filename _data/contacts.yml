@@ -7,3 +7,7 @@ contact_urls:
     url: "https://facebook.com/mostepaniuk"
     label: "Facebook"
     icon: "facebook-square"
+  google_plus:
+    url: "https://plus.google.com/u/0/+OleksandrMostepaniuk"
+    label: "Google+"
+    icon: "google-plus-square"
