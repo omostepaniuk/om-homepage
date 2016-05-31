@@ -4,6 +4,7 @@
 @import _colors.sass
 @import _utils.sass
 @import _mixins.sass
+@import _variables.sass
 
 // sticky footer
 html
@@ -76,6 +77,10 @@ body
 
 main
   font-family: "Open Sans", sans-serif
+
+@media (min-width: $screen-small)
+  .home-content
+    transform: translateY(25%)
 
 figure#logo
   width: 110px
