@@ -18,7 +18,7 @@ url: "http://mostepaniuk.com"
 # Build settings
 markdown: kramdown
 
-gems: ['jekyll-paginate', 'jekyll-multiple-languages']
+gems: ['jekyll-paginate', 'jekyll-multiple-languages-plugin']
 
 languages: ['en', 'ru']
 
@@ -28,5 +28,5 @@ excerpt_separator: "<!--more-->"
 
 # pagination settings
 
-paginate: 5
+paginate: 10
 paginate_path: "/blog/page:num/"
