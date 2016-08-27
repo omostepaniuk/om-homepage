@@ -8,11 +8,11 @@
   <div class="col-md-8 col-md-offset-2">
     <div class="post-item-content">
       <h2 class="post-item-title">
-        <a href="{{ include.post.url }}">{{ include.post.title }}</a>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ include.post.title }}</a>
       </h2>
       <div class="post-item-body">
         {{ include.post.excerpt | remove: '<p>' | remove: '</p>' }}
-        <a href="{{ include.post.url }}" class="read-more">»</a>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">»</a>
       </div>
       <div class="post-item-actions">
         {% include share.html url=include.post.url title=include.post.title %}
