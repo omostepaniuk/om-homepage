@@ -16,7 +16,7 @@ html, body
 
 body
   font-family: Merriweather, serif
-  margin-bottom: 60px
+  margin-bottom: 50px
 
 // common styling
 
@@ -137,28 +137,27 @@ figure#logo
   position: absolute
   bottom: 0
   width: 100%
-  height: 43px
-  border-top: 1px solid $default-border-color
-  padding-top: 10px
-  padding-bottom: 10px
+  height: 44px
   color: $light-grey
   background-color: #FFF
   font-size: 0.875rem
 
-  & .ft-left
-    padding-left: 10px
-    float: left
+  .footer-social
+    width: 100%
+    padding: 0
+    list-style-type: none
 
-  & .ft-right
-    padding-right: 10px
-    float: right
+    & > li
+      display: inline-block
+      width: 45px
 
-  & a
-    color: $light-grey
-    font-size: 1rem
+      & a
+        color: $light-grey
+        font-size: 1.5rem
 
-    & > i.fa
-      width: 20px
+        &:hover
+          @include transition(0.2s, cubic-bezier(0.165, 0.63, 0.14, 0.82))
+          color: $yellow
 
 /* Blog Posts */
 

@@ -2,12 +2,12 @@ contact_urls:
   twitter:
     url: "https://twitter.com/amost"
     label: "Twitter"
-    icon: "twitter-square"
+    icon: "twitter"
   facebook:
     url: "https://facebook.com/mostepaniuk"
     label: "Facebook"
-    icon: "facebook-square"
+    icon: "facebook-f"
   google_plus:
     url: "https://plus.google.com/u/0/+OleksandrMostepaniuk"
     label: "Google+"
-    icon: "google-plus-square"
+    icon: "google-plus"
