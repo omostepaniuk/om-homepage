@@ -17,4 +17,9 @@
     <!-- js -->
     <script src="{{ " /assets/lib/jquery.min.js" }}" charset="utf-8"></script>
     <script src="{{ " /assets/lib/bootstrap/js/bootstrap.min.js" }}" charset="utf-8"></script>
+
+    <!-- google analytics -->
+    {% if site.environment == 'production' %}
+      {% include google-analytics.html %}
+    {% endif %}
 </head>
