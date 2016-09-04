@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Часть вторая: South Beach"
+title:  "US 2015: Часть вторая"
+subtitle: "South Beach"
 date:   2015-09-20 00:59 +0200
 tags: Traveling,Adventures,USA,New York,Miami,South Beach
 author: Oleksandr Mostepaniuk

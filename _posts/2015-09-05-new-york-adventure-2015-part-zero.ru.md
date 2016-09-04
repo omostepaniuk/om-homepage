@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Часть нулевая: Цепочка случайностей"
+title:  "US 2015: Часть нулевая"
+subtitle: "Цепочка случайностей"
 date:   2015-09-16 00:57 +0200
 tags: Traveling,Adventures,USA,New York
 author: Oleksandr Mostepaniuk

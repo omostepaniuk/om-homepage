@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Часть первая: The Bronx"
+title:  "US 2015: Часть первая"
+subtitle: "The Bronx"
 date:   2015-09-17 00:57 +0200
 tags: Traveling,Adventures,USA,New York
 author: Oleksandr Mostepaniuk
