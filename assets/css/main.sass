@@ -78,9 +78,9 @@ body
 main
   font-family: "Open Sans", sans-serif
 
-@media (min-width: $screen-small)
-  .home-content
-    transform: translateY(25%)
+.home-content
+  // 94px is a hack to compensate for the height of a header and footer
+  margin-top: calc((100vh - 94px) / 2)
 
 figure#logo
   width: 110px
@@ -98,13 +98,15 @@ figure#logo
     border-radius: 100%
 
 .header-stripe
-  padding: 2rem
+  padding: 0 2rem 2rem 2rem
+  transform: translateY(-50%)
 
   & h1
     margin-bottom: 8px
     text-align: center
     color: $grey
     font-weight: bold
+    font-size: 2.5rem
 
   & h2
     margin-top: 0
