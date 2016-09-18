@@ -5,5 +5,22 @@
     </figure>
     <h1>Oleksandr Mostepaniuk</h1>
     <h2>Stop stopping</h2>
+    <div class="test-nav">
+      <ul>
+      {% for nav_item in site.data.navigation.nav.main %}
+        {% assign navigation_item_key = nav_item[0] %}
+        <li class="navbar-item">
+          <a href="{% if page.language != 'en' %}/{{page.language}}{% endif %}{{ nav_item[1] }}">
+            <span>{{ site.data.i18n[page.language].navigation[navigation_item_key] }}</span>
+          </a>
+        </li>
+      {% endfor %}
+        <li class="navbar-item">
+          <a href="/about">
+            <span>about</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>

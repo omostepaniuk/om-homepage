@@ -6,17 +6,53 @@
 @import _mixins.sass
 @import _variables.sass
 
+// test
+
+.test-nav
+  padding-top: 15px
+  
+  & > ul
+    padding-left: 0
+    text-align: center
+
+    & > li:last-child
+      padding-right: 0
+      // border-right: none
+
+    & > li:first-child
+      padding-left: 0
+
+    & > li
+      list-style-type: none
+      display: inline-block
+      padding-left: 10px
+      padding-right: 10px
+      // border-right: 1px solid $light-grey
+
+      & a
+        font-family: 'Open Sans', arial, helvetica, tahoma, sans-serif
+        font-weight: 600
+        font-size: 0.825rem
+        text-transform: uppercase
+        color: black
+
+
+// end test
+
 // sticky footer
 html
   position: relative
   min-height: 100%
+  height: 100%
 
 html, body
   font-size: 100%
 
 body
   font-family: Merriweather, serif
-  margin-bottom: 50px
+  margin: 0 0 50px
+  // note: 50px is height of a footer
+  height: calc(100% - 50px)
 
 // common styling
 
@@ -35,7 +71,7 @@ body
 .navbar-site
   background-color: #FFF
   border: none
-  border-bottom: 1px solid $default-border-color
+  //border-bottom: 1px solid $default-border-color
 
   & .navbar-toggle
     border-color: $light-grey
@@ -77,10 +113,11 @@ body
 
 main
   font-family: "Open Sans", sans-serif
+  height: 100%
 
 .home-content
-  // 94px is a hack to compensate for the height of a header and footer
-  margin-top: calc((100vh - 94px) / 2)
+  position: relative
+  height: 100%
 
 figure#logo
   width: 110px
@@ -98,8 +135,12 @@ figure#logo
     border-radius: 100%
 
 .header-stripe
-  padding: 0 2rem 2rem 2rem
+  position: absolute
+  // note: -50px compensates height of a footer
+  margin-top: -50px
+  top: 50%
   transform: translateY(-50%)
+  width: 100%
 
   & h1
     margin-bottom: 8px
@@ -109,11 +150,18 @@ figure#logo
     font-size: 2.5rem
 
   & h2
+    position: relative
     margin-top: 0
     text-align: center
     color: $light-grey
     font-family: Merriweather, serif
     font-weight: normal
+    @include underline($color: #000, $width: 2rem)
+
+    &::before
+      top: calc(100% + 15px)
+      left: 50%
+      @include translate(-50%)
 
 .about-me
   color: $dark-grey
@@ -136,8 +184,8 @@ figure#logo
 .page-footer
   position: absolute
   bottom: 0
+  height: 50px
   width: 100%
-  height: 44px
   color: $light-grey
   background-color: #FFF
   font-size: 0.875rem
