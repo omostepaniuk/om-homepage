@@ -20,16 +20,6 @@
 
       <div class="collapse navbar-collapse" id="site-navbar-collapse">
         <div class="navbar-right">
-          <ul class="nav navbar-nav ">
-            {% for nav_item in site.data.navigation.nav.main %}
-              {% assign navigation_item_key = nav_item[0] %}
-              <li class="navbar-item">
-                <a href="{% if page.language != 'en' %}/{{page.language}}{% endif %}{{ nav_item[1] }}">
-                  <span>{{ site.data.i18n[page.language].navigation[navigation_item_key] }}</span>
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
           <ul class="nav navbar-nav lang-selector">
             <li><a href="/" class="{% if page.language == 'en' %}active{% endif %}">en</a></li>
             <li><a href="/ru" class="{% if page.language == 'ru' %}active{% endif %}">ru</a></li>
