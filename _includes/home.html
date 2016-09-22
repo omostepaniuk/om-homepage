@@ -1,11 +1,11 @@
-<div class="home-content">
-  <div class="header-stripe">
+<div>
+  <div class="js-index-content-container header-stripe">
     <figure id="logo">
       <a href="{{ site.baseurl }}"></a>
     </figure>
     <h1>Oleksandr Mostepaniuk</h1>
     <h2>Stop stopping</h2>
-    <div class="test-nav">
+    <div class="homepage-nav">
       <ul>
       {% for nav_item in site.data.navigation.nav.main %}
         {% assign navigation_item_key = nav_item[0] %}
@@ -15,12 +15,8 @@
           </a>
         </li>
       {% endfor %}
-        <li class="navbar-item">
-          <a href="/about">
-            <span>about</span>
-          </a>
-        </li>
       </ul>
     </div>
   </div>
 </div>
+<script src="{{ "/assets/js/index-page-content-centering.js" }}" charset="utf-8"></script>

@@ -6,44 +6,10 @@
 @import _mixins.sass
 @import _variables.sass
 
-// test
-
-.test-nav
-  padding-top: 15px
-  
-  & > ul
-    padding-left: 0
-    text-align: center
-
-    & > li:last-child
-      padding-right: 0
-      // border-right: none
-
-    & > li:first-child
-      padding-left: 0
-
-    & > li
-      list-style-type: none
-      display: inline-block
-      padding-left: 10px
-      padding-right: 10px
-      // border-right: 1px solid $light-grey
-
-      & a
-        font-family: 'Open Sans', arial, helvetica, tahoma, sans-serif
-        font-weight: 600
-        font-size: 0.825rem
-        text-transform: uppercase
-        color: black
-
-
-// end test
-
 // sticky footer
 html
   position: relative
   min-height: 100%
-  height: 100%
 
 html, body
   font-size: 100%
@@ -51,8 +17,6 @@ html, body
 body
   font-family: Merriweather, serif
   margin: 0 0 50px
-  // note: 50px is height of a footer
-  height: calc(100% - 50px)
 
 // common styling
 
@@ -109,15 +73,40 @@ body
 .lang-selector
   margin-left: 15px
 
-/* Index page */
+/* Index page
 
 main
   font-family: "Open Sans", sans-serif
   height: 100%
 
-.home-content
-  position: relative
-  height: 100%
+  .homepage-nav
+    padding-top: 15px
+
+    & > ul
+      padding-left: 0
+      text-align: center
+
+      & > li:last-child
+        padding-right: 0
+
+      & > li:first-child
+        padding-left: 0
+
+      & > li
+        list-style-type: none
+        display: inline-block
+        padding-left: 10px
+        padding-right: 10px
+
+        & a
+          font-family: 'Open Sans', arial, helvetica, tahoma, sans-serif
+          font-weight: 600
+          font-size: 0.825rem
+          text-transform: uppercase
+          color: black
+
+          &:hover
+            text-decoration: none
 
 figure#logo
   width: 110px
@@ -135,11 +124,6 @@ figure#logo
     border-radius: 100%
 
 .header-stripe
-  position: absolute
-  // note: -50px compensates height of a footer
-  margin-top: -50px
-  top: 50%
-  transform: translateY(-50%)
   width: 100%
 
   & h1
@@ -162,9 +146,6 @@ figure#logo
       top: calc(100% + 15px)
       left: 50%
       @include translate(-50%)
-
-.about-me
-  color: $dark-grey
 
   & p
     font-family: Merriweather, sans-serif
