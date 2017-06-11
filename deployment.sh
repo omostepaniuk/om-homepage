@@ -8,7 +8,7 @@ SOURCE_DIR=./_site
 declare -A DEPLOYMENT_SETTINGS
 
 function print_help(){
-  printf "Usage: -e|--environment <environment_to_deploy_to> -- target environment (e.g. staging/production)\n    -f|--file <name_of_configuration_file>"
+  printf "Usage: -e|--environment <environment_to_deploy_to> -- target environment (e.g. staging/production)\n    -f|--file <name_of_configuration_file>\n"
 }
 
 function parse_config(){
